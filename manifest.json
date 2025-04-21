@@ -1,0 +1,23 @@
+{
+	"name"				: "review marker",
+	"version"			: "1.0",
+	"description"		: "⏵/⏸: {Ctrl: ⏺}, {⏺: ⏮/⏭}, {⎚: }",
+	"manifest_version"	: 2,
+	"icons"				: {"32": "暗_icon.svg", "64": "亮_icon.svg"},
+	"permissions"		: ["activeTab", "file://*/*"],
+	"content_scripts"	: [
+		{
+			"matches": ["<all_urls>"],
+			"js"	 : ["content.js"],
+			"run_at" : "document_idle"
+		}
+	],
+	"browser_action"	: {
+		"default_popup": "popup.html",
+		"theme_icons"  : [{
+			"light": "亮_icon.svg",
+			"dark" : "暗_icon.svg",
+			"size" : 32
+		}]
+	}
+}

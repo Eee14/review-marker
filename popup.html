@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <script src="popup.js"></script>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+    .清 {
+      cursor: pointer;
+      aspect-ratio: 1;
+      font-size: 60px;
+    }
+    .清 span {
+      display: inline-block;
+      transform: translateY(-22%);
+    }
+    .線 {
+      border-top: 1px solid;
+      margin: 4px 0 8px 0;
+      opacity: 0.1; /*淡化顏色*/
+    }
+    .鏈 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .鏈 a {
+      font-size: 10px;
+      text-decoration: none;
+      color: inherit; /*使用系統色彩*/
+      opacity: 0.3;   /*淡化顏色*/
+    }
+    .鏈 a:hover {
+      opacity: 1; /*恢復顏色*/
+    }
+    #號 {
+      font-weight: bold;
+    }
+  </style>
+  <title>review marker</title>
+</head>
+<body>
+  <div class="能"><!--功能區-->
+    <button class="清"><span>⎚</span></button>
+  </div>
+  <div class="線"></div><!--分隔線-->
+  <div class="鏈"><!--分隔線下方的鏈結-->
+    <a href="https://ko-fi.com/eee14"                target="_blank"        >🎔</a>
+    <a href="https://github.com/Eee14/review-marker" target="_blank" id="號">v?.?</a>
+  </div>
+</body>
+</html>
